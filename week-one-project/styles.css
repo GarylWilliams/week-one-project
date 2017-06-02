@@ -1,0 +1,132 @@
+/*Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343*/
+
+
+@import {
+    font-family: Merriweather; src: url('https://fonts.googleapis.com/css?family=Merriweather');
+}
+
+@import {
+    font-family: Lora; src: url('https://fonts.googleapis.com/css?family=Lora');
+}
+
+
+
+
+/*.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  height: 25px;
+  align-items: flex-end;
+}*/
+
+header {
+
+  /*display: flex;*/
+  background-image: url("images/bent-creek-logo.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  margin: 0;
+
+
+}
+
+
+nav {
+  background-image: url("images/bent-creek-logo.png");
+  background-repeat: no-repeat;
+  color: #968772 ;
+  padding-top: 30px;
+  font-size: 30px;
+  display: flex;
+  text-transform: capitalize;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  margin-left: 70px;
+  margin-right: 75px;
+}
+
+.controls a{
+    color: #968772;
+    list-style: none;
+}
+.controls a:hover{
+    color: #CD5D67;
+
+}
+/*Main Body CSS Starts */
+
+.main-body {
+  display: flex;
+  background-color: #F2F1E8;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+
+}
+.header {
+  color: #131511;
+  font-size: 57px;
+  font-family: Merriweather;
+  padding-left: 350PX;
+
+}
+.subheader {
+
+  font-size: 31px;
+  padding-left: 500px;
+  padding-top: -275px;
+  padding-bottom: 500px:
+  font-family: Merriweather;
+}
+.pictures-one {
+    display: grid;
+    
+}
+#Pic1 {
+    background-image: img("images/product-2.jpg");
+    flex: 35%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*
+#id img1 {
+    height: 50px;
+    width: 50px;
+
+}
+.picture-box-one {
+    display: flex;
+}
+
+.picture-box-one li {
+    list-style: none;
+}
+.picture-box ul {
+    display: inline;
+*/
+}
