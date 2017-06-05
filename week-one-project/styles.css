@@ -14,119 +14,371 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343*/
 
 
-@import {
-    font-family: Merriweather; src: url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i");
 }
 
-@import {
-    font-family: Lora; src: url('https://fonts.googleapis.com/css?family=Lora');
+/*index.html*/
+
+body {
+  background-color: #F2F1E8;
+  color: #131511;
+  font-family: 'Merriweather';
+  margin: 0px;
+  width: 100%;
 }
 
-
-
-
-/*.wrapper {
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: #FFFFFF;
-  height: 25px;
-  align-items: flex-end;
-}*/
-
-header {
-
-  /*display: flex;*/
-  background-image: url("images/bent-creek-logo.png");
-  background-repeat: no-repeat;
-  background-color: white;
-  margin: 0;
-
+p {
+  font-size: 18px;
+  line-height: 2em;
 
 }
-
 
 nav {
+  background-color: #FFF;
   background-image: url("images/bent-creek-logo.png");
   background-repeat: no-repeat;
-  color: #968772 ;
-  padding-top: 30px;
-  font-size: 30px;
-  display: flex;
-  text-transform: capitalize;
-  justify-content: center;
-  justify-content: space-around;
+  background-position: left;
+  background-size: contain;
   width: 100%;
-  height: 70px;
-  margin-left: 70px;
-  margin-right: 75px;
+  z-index: 1;
 }
 
-.controls a{
-    color: #968772;
-    list-style: none;
+nav ul {
+  background-color: #FFF;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
-.controls a:hover{
-    color: #CD5D67;
 
+nav li {
+  background-color: #FFF;
+  display: inline-block;
+  text-align: left; /*(compensates for bullets)*/
+  width: 100px;
 }
-/*Main Body CSS Starts */
 
-.main-body {
-  display: flex;
-  background-color: #F2F1E8;
+nav a {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #2B2F26;
+}
+
+nav a:hover {
+  color: #CD5D67;
+}
+
+nav a:active {
+  color: #968772;
+}
+
+.active-navbar-color a {
+  color: #968772;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  height: 100%;
-  flex-direction: column;
-
 }
+
 .header {
-  color: #131511;
-  font-size: 57px;
-  font-family: Merriweather;
-  padding-left: 350PX;
-
+  font-family: 'Merriweather';
+  font-size: 65px;
+  padding-top: 20px;
+  text-align: center;
 }
-.subheader {
-
-  font-size: 31px;
-  padding-left: 500px;
-  padding-top: -275px;
-  padding-bottom: 500px:
-  font-family: Merriweather;
+.sub-header {
+  font-family: 'Merriweather';
+  font-size: 40px;
+  margin-top: -30px;
+  text-align: center;
 }
-.pictures-one {
-    display: grid;
+
+/*first row of pics on home page*/
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.top-row img {
+  height: 405px;
+  width: auto;
+}
+#pic1 {
+  width: 540px;
+  height: 405px;
+}
+
+.pic1 {
+  position: relative;
+}
+.pic1 p {
+  position: relative;
+  background-color: #2b2f26;
+  bottom: 5px;
+  color: #F2F1E8;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+}
+
+.pic2 {
+  position: relative;
+}
+.pic2 p {
+  position: relative;
+  background-color: #2b2f26;
+  bottom: 5px;
+  color: #F2F1E8;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+}
+
+.pic3 {
+  position: relative;
+}
+.pic3 p {
+  position: relative;
+  background-color: #2b2f26;
+  bottom: 5px;
+  color: #F2F1E8;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+}
+
+/*bottom row of pics on home page*/
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.bottom-row img {
+  height: 200px;
+  width: auto;
+}
+
+img {
+  padding: 5px;
+}
+
+.pic4 {
+  position: relative;
+}
+.pic4 p {
+  position: relative;
+  background-color: #2b2f26;
+  bottom: 5px;
+  color: #F2F1E8;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+}
+
+.pic5 {
+  position: relative;
+}
+.pic5 p {
+  position: relative;
+  background-color: #2b2f26;
+  bottom: 5px;
+  color: #F2F1E8;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+}
+
+.pic6 {
+  position: relative;
+}
+.pic6 p {
+  position: relative;
+  background-color: #2b2f26;
+  bottom: 5px;
+  color: #F2F1E8;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+}
+
+.pic7 {
+  position: relative;
+}
+.pic7 p {
+  position: relative;    
+  background-color: #2b2f26;
+  bottom: 5px;
+  color: #F2F1E8;
+  left: 5px;
+  padding: 5px;
+  position: absolute;
+}
+
+
+/*about.html*/
+
+.about-info {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.title {
+    padding-left: 222px
     
 }
-#Pic1 {
-    background-image: img("images/product-2.jpg");
-    flex: 35%;
-    
+.first-p  {
+  display: flex;
+  flex-direction: row;
+}
+
+#birdhouse-p {
+
+}
+
+blockquote {
+  border-left: 1.5px solid #968772;
+  margin-left: auto;
+  padding-left: 25px;
+}
+
+article.about-pic {
+  background-image: url("images/background-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 300px;
+  position: static;
+  width: 100%;
+}
+
+.room-p {
+  color: white;
+  font-size: 50px
+
+}
+
+.facilities {
+  display: flex;
+  flex-direction: row;
+}
+
+.facilities1 p {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.about-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  padding: 20px;
+  table-layout: auto;
+}
+
+.about-table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.about-table th {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+tr.row-color {
+  background-color: white;
+}
+
+
+/*Newsletter CSS*/
+
+main.news {
+  background-image: url("images/background-2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 800px;
+  width: 100%;
 }
 
 
 
-
-
-
-
-
-
-
-/*
-#id img1 {
-    height: 50px;
-    width: 50px;
-
-}
-.picture-box-one {
-    display: flex;
+.news-form {
+  width: 600px;
+  height: 350px;
+  background-color: #FFF;
+  border-radius: 3px;
+  margin-top: -60px;
+  text-align: center;
 }
 
-.picture-box-one li {
-    list-style: none;
+.news-input {
+  background-color: #FFF;
+  margin-left: 20px;
 }
-.picture-box ul {
-    display: inline;
-*/
+
+input.input-boxes {
+  background-color: #FFF;
+  border: none;
+  border-bottom: 1px solid black;
+  color: #968772;
+  float: left;
+  font-size: 20px;
+  height: 40px;
+  width: 90%;
+}
+
+
+
+button.submit-button {
+  background-color: #968772;
+  border-radius: 2px;
+  color: #F2F1E8;
+  font-family: 'Roboto';
+  font-size: 16px;
+  width: 125px;
+  height: 45px;
+}
+
+button.submit-button:hover {
+  color: #FFF;
+  background-color: #967343;
+}
+
+button.submit-button:active {
+  border-color: lime;
+}
+
+
+/*footer for all three pages*/
+
+footer {
+  background-color: #2b2f26;
+  color: #F2F1E8;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Merriweather';
+  font-size: 14px;
+  height: 70px;
+  justify-content: center;
+  margin: 0;
+  padding-left: 10px;
 }
